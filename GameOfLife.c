@@ -1,3 +1,12 @@
+/*
+Karthigan Govender
+Obusitse Selebalo
+Humbulani Masiagwala
+Lehlohonolo Macheru
+Sizwe Mazibuko
+Thabiso Bokaba
+*/
+
 #include <stdlib.h>
 #include <stdio.h>
 #define HEIGHT 35
@@ -5,7 +14,6 @@
 #define LIFE_YES 1
 #define LIFE_NO 0
 
-// make the rest of the function calls easier to read
 typedef int TableType[HEIGHT][WIDTH];
 
 void printTable(TableType table) {
@@ -16,7 +24,7 @@ void printTable(TableType table) {
 			if (table[height][width] == LIFE_YES) {
 				printf("\x1b[32;40m#\x1b[0m");
 			} else {
-				printf("\x1b[31;40m \x1b[0m");
+				printf("\x1b[31;40m-\x1b[0m");
 			}
 		}
 		printf("\n");
